@@ -1,2 +1,101 @@
 #Prompt for math 
-reponds au question mais avant dis moi quel l'idee directrice , du l'exercice
+Super idée. Voici un prompt réutilisable (et un mini‑template) pour m’obliger à faire ressortir toutes les petites subtilités : bornes, min/max, conventions, cas limites, etc., quel que soit l’exercice.
+
+
+---
+
+Prompt “rigueur maximale” (à copier-coller)
+
+> Résous l’exercice ci‑dessous en suivant ce protocole strict et complet :
+
+1. Reformule l’énoncé et définis toutes les variables et domaines (entiers/ réels, positifs, bornes, etc.).
+
+
+2. Hypothèses explicites : précise les conventions utilisées (par ex.  si ), l’équiprobabilité ou non, indépendance des tirages, etc. Si l’équiprobabilité n’est pas garantie, n’utilise pas la définition de Laplace ; donne la version pondérée.
+
+
+3. Objectif exact : ce qu’il faut prouver/calculer (coefficient, probabilité, cardinal, identité…).
+
+
+4. Stratégie : liste brièvement 1–2 méthodes possibles ; choisis-en une et justifie le choix. Prévois une vérification croisée par une autre méthode si faisable.
+
+
+5. Déroulé pas‑à‑pas :
+
+Sommes/produits/index : écris le terme général et dérive les bornes d’indices par intersection de contraintes (ex.  et   ). Explique l’apparition des  et .
+
+Extraction de coefficient : utilise  pour “coefficient de ”. Donne la convolution  avec bornes correctes (ou la convention “zéro hors bornes”).
+
+Inclusion–exclusion : définis les ensembles (), donne , etc., puis applique la formule en expliquant chaque terme.
+
+Probabilités : définis l’espace échantillon , dis s’il est équiprobable ; sinon, utilise . Évite toute “division par le nombre de cas” non justifiée.
+
+
+
+6. Cas limites / garde‑fous : que se passe‑t‑il si , , , , indices hors plage, dénominateurs nuls, etc. ?
+
+
+7. Vérifications rapides : test numérique sur un petit cas, ou check indépendant (ex. comparer à , évaluer à , symétries, ordre de grandeur).
+
+
+8. Résultat final : encadre/boxe la réponse avec ses conditions de validité.
+
+
+9. Erreurs fréquentes à éviter dans ce type d’exercice (liste courte, ciblée).
+
+
+
+
+
+> ÉNONCÉ : [colle ici l’exercice]
+
+
+
+
+---
+
+Version courte (à utiliser quand tu es pressé)
+
+> Donne une solution rigoureuse et complète en :
+
+explicitant hypothèses et conventions ( hors bornes, équiprobabilité, etc.),
+
+dérivant les bornes d’indices via  par intersection de contraintes,
+
+montrant l’extraction de coefficient  (si polynômes) ou l’inclusion–exclusion (si dénombrement),
+
+traitant les cas limites et faisant une vérification croisée,
+
+encadrant le résultat final et listant 2–3 pièges courants à éviter.
+
+
+ÉNONCÉ : […]
+
+
+
+
+---
+
+Mini‑checklist que je suivrai (tu peux la laisser à la fin du prompt)
+
+[ ] Variables/domaine/hypothèses posés clairement
+
+[ ] Conventions explicites (zéro hors bornes, etc.)
+
+[ ] Bornes d’indices justifiées par  (intersection)
+
+[ ] Méthode principale + vérif croisée
+
+[ ] Cas limites/edge cases couverts
+
+[ ] Sanity check numérique/simple
+
+[ ] Résultat final + conditions + pièges courants
+
+
+
+---
+
+Si tu veux, je peux l’adapter à un type d’exercice précis (ex. uniquement “produits de séries/extraction de coefficient”, ou “combinatoire/probas”).
+
+
