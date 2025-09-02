@@ -1,5 +1,5 @@
 # project
-projects
+projects  
 Mad Libs Generator in Python
 Python Number Guessing Game
 Countdown Timer in Python
