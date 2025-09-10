@@ -29,3 +29,26 @@ while user_guess != number:
 
     else:
         print("Congratulations! You guessed the right number!")
+
+''' -----------------second part code-------------------------------- '''
+# import random
+
+import random
+def binary_search(target, low, high):
+        guess = 0
+ # i don't make a copy because there are non mutable type val (low,high)
+        while low <= high:
+                mid = (low + high ) // 2
+                guess += 1
+                print(mid)
+                if mid  == target:
+                        return guess
+                elif mid < target:
+                        low = mid + 1
+                else:
+                        high = mid - 1
+        return None
+
+target = random.randint(1,100000)
+
+binary_search(target,1, 100000)
